@@ -1,5 +1,5 @@
 ![SharperHacks logo](SHLLC-Logo.jpg)
-# StringBuilderExtensions Library for .NET 7+
+# StringBuilderExtensions Library for .NET
 ## SharperHacks.CoreLibs.StringBuilderExtensions
 
 Defines extensions to System.Text.StringBuilder.
@@ -11,8 +11,8 @@ Contact: coders@sharperhacks.org
 Nuget: https://www.nuget.org/packages/SharperHacks.CoreLibs.StringBuilderExtensions.
 
 ### Targets
-- net7.0
 - net8.0
+- net9.0
 
 ### Classes
 
