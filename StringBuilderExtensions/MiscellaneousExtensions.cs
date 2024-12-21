@@ -1,4 +1,4 @@
-﻿// Copyright and trademark notices at the end of this file.
+// Copyright and trademark notices at the end of this file.
 
 using SharperHacks.CoreLibs.Constants;
 
@@ -16,13 +16,13 @@ public static class MiscellaneousExtensions
     /// Append the specified number of spaces.
     /// </summary>
     /// <param name="sb"></param>
-    /// <param name="indentLevel"></param>
+    /// <param name="count"></param>
     /// <returns>This instance with specified appendage</returns>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static StringBuilder AppendSpaces(
         this StringBuilder sb,
-        int indentLevel)
-        => sb.Append(Characters.Space, indentLevel);
+        int count)
+        => sb.Append(Characters.Space, count);
 }
 
 // Copyright Joseph W Donahue and Sharper Hacks LLC (US-WA)
