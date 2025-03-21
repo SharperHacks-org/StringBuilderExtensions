@@ -12,7 +12,7 @@
 @if /i "%1" equ "--help" (@goto ShowHelp)
 
 @set _buildType=Debug
-@set _solution=StringBuilderExtensions.sln
+@set _solution=StringBuilderExtensions.slnx
 @set _buildVerbosity=minimal
 @set _testVerbosity=minimal
 @call :SetVersionVariables
