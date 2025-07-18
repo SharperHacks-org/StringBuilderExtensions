@@ -1,13 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Authors>Joseph W Donahue</Authors>
-    <Copyright>Joseph W Donahue &amp; Sharper Hacks LLC (WA)</Copyright>
-    <Company>Sharper Hacks LLC (US-WA)</Company>
-    <Description>A collection of extensions for System.Text.StringBuilder</Description>
-  </PropertyGroup>
-
-  <PropertyGroup>
     <AssemblyName>SharperHacks.CoreLibs.$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>SharperHacks.CoreLibs.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -15,6 +8,7 @@
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <FileVersion>0.0.0.0</FileVersion>
     <Title>$(AssemblyName)</Title>
+    <PathMap>$(SolutionDir)={$(PathMapRoot)/$(SolutionName)}/</PathMap>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -39,7 +33,6 @@
     <Deterministic>true</Deterministic>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PathMap>$(MSBuildThisFileDirectory)={SHLLC/CoreLibs/$(MSBuildProjectName)}/</PathMap>
     <NuGetAuditMode>all</NuGetAuditMode>
   </PropertyGroup>
 
@@ -68,12 +61,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SharperHacks.CoreLibs.Constants" Version="4.0.2" />
+    <PackageReference Include="SharperHacks.CoreLibs.Constants" Version="4.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="$(SolutionDir)LICENSE" Pack="true" PackagePath="" />
-    <None Include="..\.editorconfig" Link=".editorconfig" />
     <None Update="LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
