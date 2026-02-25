@@ -1,5 +1,7 @@
 ![SharperHacks logo](SHLLC-Logo.jpg)
-# StringBuilderExtensions Library for .NET
+# PROJECT MOVED TO [codeberg.org](https://codeberg.org/SharperHacks-org/StringBuilderExtensions).
+# THIS REPO WILL BE DELETED SOON.
+## StringBuilderExtensions Library for .NET
 ## SharperHacks.CoreLibs.StringBuilderExtensions
 
 Defines extensions to System.Text.StringBuilder.
@@ -45,4 +47,5 @@ Nuget: https://www.nuget.org/packages/SharperHacks.CoreLibs.StringBuilderExtensi
       this StringBuilder sb,
       int indentLevel)
       => sb.Append(Characters.Space, indentLevel);
+
 ```
